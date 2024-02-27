@@ -45,8 +45,6 @@ function Home() {
     const [mostrar, setMostrar] = useState([]);
     const buscar = async () => {
         Get()
-        mensaje('Actualizando para buscar')
-        await delay(800);
         const Form = new FormData(form.current);
         if (Form.get('buscar')!=''){
             const trans = Form.get('buscar');
@@ -54,7 +52,7 @@ function Home() {
             
             mensaje('buscando...')
             const foundPersons = await automaton.findSubstringInArrayObjects(cliente);
-            await delay(2000);
+            await delay(1000);
             mensaje('')
             if (foundPersons.length > 0) {
                 setCliente(foundPersons);

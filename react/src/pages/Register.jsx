@@ -4,7 +4,6 @@ import FromLogin from "../organism/From";
 import Bottons from "../atomos/Botton";
 import styled from "styled-components";
 import Alert from "../atomos/Alert";
-import Links from "../atomos/Links";
 
 const StyleForm = styled.form`
     display: flex;
